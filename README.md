@@ -1,8 +1,9 @@
 # RAPID: Retrieval Augmented Training of Differentially Private Diffusion Models
 
-This is the offical implemation of [RAPID: Retrieval Augmented Training of Differentially Private Diffusion Models](https://openreview.net/forum?id=txZVQRc2ab). The code is based off a public implementation of Latent Diffusion Models, available [here](https://github.com/CompVis/latent-diffusion) and a public implementation of [Differentially Private Latent Diffusion Models](https://openreview.net/pdf?id=FLOxzCa6DS) available [here](https://github.com/SaiyueLyu/DP-LDM).
+This is the offical implemation of [RAPID: Retrieval Augmented Training of Differentially Private Diffusion Models](https://openreview.net/forum?id=txZVQRc2ab). 
+The code is based off a public implementation of Latent Diffusion Models, available [here](https://github.com/CompVis/latent-diffusion) and a public implementation of [Differentially Private Latent Diffusion Models](https://openreview.net/pdf?id=FLOxzCa6DS) available [here](https://github.com/SaiyueLyu/DP-LDM).
 
-# Enviroment setup:
+# Environment setup:
 
 ```sh
 conda env create -f environment.yaml
@@ -46,12 +47,12 @@ python unconditional_sampling.py --config <DM config file path> --private_config
  --private_ckpt <checkpoint path> --netpath <path to the feature extractor> --output <network output path> 
 ``` 
 
-# FID evaluation
+# FID Evaluation
 ```bash
 python FID_test.py --sample_path <path to generated samples> --train_stats_path <path to generated statistics on the reference set>
 ``` 
 
-# Diversity evaluation
+# Diversity Evaluation
 ```bash
 python Diversity_test.py --sample_path <path to generated samples> --data_config <config file path>
 ``` 
