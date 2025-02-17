@@ -1,0 +1,39 @@
+name: RAPID
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.5
+  - pip=23.2.1
+  - pytorch=1.13.1
+  - torchvision=0.14.1
+  - pytorch-cuda=11.7
+  - torchmetrics=0.5.0
+  - numpy=1.19.2
+  - albumentations=1.3.1
+  - opencv=4.5.1
+  - pudb=2022.1.3
+  - imageio=2.31.1
+  - imageio-ffmpeg=0.4.8
+  - pytorch-lightning=1.4.2
+  - omegaconf=2.3.0
+  - streamlit=1.24.1
+  - einops=0.6.1
+  - transformers=4.32.1
+  - opacus=1.4.0
+  - kornia=0.7.0
+  - protobuf=3.20.1
+  - wilds=2.0.0
+  - pip:
+    - test-tube==0.7.5
+    - prdc
+    - torch-fidelity==0.3.0
+    - scann==1.2.10
+    - pytorch-fid==0.3.0
+    - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+    - -e git+https://github.com/yuxiangw/autodp.git@5fad5e19c9958395453f234d259c01416a7ecbbc#egg=autodp
+    - https://github.com/podgorskiy/dnnlib/releases/download/0.0.1/dnnlib-0.0.1-py3-none-any.whl
+    - -e .
