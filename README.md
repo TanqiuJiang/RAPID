@@ -1,4 +1,4 @@
-# $RAPID: Marrying Differentially Private Diffusion Models with Retrieval-Augmented Generation
+# RAPID: Marrying Differentially Private Diffusion Models with Retrieval-Augmented Generation
 
 This is the offical implemation of [RAPID: Marrying Differentially Private Diffusion Models with Retrieval-Augmented Generation](https://openreview.net/forum?id=uRcJ7n741M). The code is based off a public implementation of Latent Diffusion Models, available [here](https://github.com/CompVis/latent-diffusion) and a public implementation of [Differentially Private Latent Diffusion Models](https://openreview.net/pdf?id=FLOxzCa6DS) available [here](https://github.com/SaiyueLyu/DP-LDM).
 
